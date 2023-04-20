@@ -1,3 +1,11 @@
-export default function Home() {
-  return <>Hello From Home Page</>;
+import Home from "src/components/home";
+
+function HomePage() {
+  return <Home />;
 }
+
+export async function getServerSideProps() {
+  return { props: {} };
+}
+
+export default HomePage;
