@@ -56,7 +56,7 @@ const Header = () => {
     <Flex
       alignItems="center"
       py={{ base: "2", md: "8" }}
-      px={{ base: "4", md: "8", lg: "24" }}
+      px={{ base: "4", md: "8", lg: "12", xl: "24" }}
       justifyContent="space-between"
     >
       <MotionHeading
@@ -64,6 +64,7 @@ const Header = () => {
         whileHover="hover"
         whileTap="tap"
         size="lg"
+        fontWeight={540}
       >
         <Link href="/">Danny Dwi Cahyono</Link>
       </MotionHeading>
@@ -126,7 +127,7 @@ const Header = () => {
             top="0"
             left="0"
             width="full"
-            height="md"
+            height="23rem"
             bg={bgBasedOnColorMode}
             zIndex="1"
           >
