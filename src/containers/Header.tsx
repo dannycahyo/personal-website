@@ -64,7 +64,6 @@ const Header = () => {
         whileHover="hover"
         whileTap="tap"
         size="lg"
-        fontWeight={540}
       >
         <Link href="/">Danny Dwi Cahyono</Link>
       </MotionHeading>
