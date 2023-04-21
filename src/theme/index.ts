@@ -53,6 +53,7 @@ const theme = extendTheme({
       100: "#1E4D85",
       200: "#072852",
       300: "#041E44",
+      400: "#153B6A",
     },
     personalLight: {
       100: "#FFFFFF",

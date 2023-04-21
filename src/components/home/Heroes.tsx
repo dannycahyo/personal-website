@@ -63,7 +63,12 @@ const BrandingSection = () => {
   );
 };
 
-const AnimationSection = ({ ref }: { ref: MutableRefObject<null> }) => {
+const AnimationSection = () => {
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   return (
     <Box
       width={{ base: "300px", lg: "400px", xl: "541px" }}
@@ -86,24 +91,18 @@ const AnimationSection = ({ ref }: { ref: MutableRefObject<null> }) => {
 const Heroes = () => {
   const isMobileView = useBreakpointValue({ base: true, md: false });
 
-  const ref = useRef(null);
-  useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
-
   return (
     <Grid
       justifyContent="center"
       alignItems="center"
-      //   gap={12}
       py={{ base: "2", md: "4" }}
       px={{ base: "4", md: "8", lg: "12", xl: "24" }}
     >
       <GridItem colStart={1} colEnd={[5, 3, 3, 3]} pb={{ xl: "12" }}>
-        {isMobileView ? <AnimationSection ref={ref} /> : <BrandingSection />}
+        {isMobileView ? <AnimationSection /> : <BrandingSection />}
       </GridItem>
       <GridItem colStart={[1, 3, 3, 3]} colEnd={[5, 6, 6, 6]}>
-        {isMobileView ? <BrandingSection /> : <AnimationSection ref={ref} />}
+        {isMobileView ? <BrandingSection /> : <AnimationSection />}
       </GridItem>
     </Grid>
   );
