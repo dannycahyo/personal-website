@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
-
 import {
-  Container,
   Heading,
   Button,
   VStack,
   HStack,
   Text,
   Flex,
-  Tag,
   Box,
   Grid,
   useColorModeValue,
@@ -17,9 +13,9 @@ import {
 import { CheckCircleIcon } from "@chakra-ui/icons";
 
 import ChakraCarousel from "src/containers/ChakraCarousel";
+import { workExperienceData } from "src/constant/workExperience";
 
 const WorkEperiences = () => {
-  const [data, setData] = useState([]);
   const bgBasedOnColorMode = useColorModeValue(
     "linear-gradient(180deg, #00C0FD 0%, #0056FD 100%)",
     "personalDark.400"
@@ -30,19 +26,16 @@ const WorkEperiences = () => {
     "personalDark.100"
   );
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts/")
-      .then((res) => res.json())
-      .then((res) => setData(res));
-  }, []);
+  // TODO: USE THIS COMPONENT FOR TALK SECTION
+  // TODO: REPLACE THIS SECTION WITH THE ONE LOOKS LIKE GARY SHENG
 
   return (
     <Box
-      py={{ base: "2", md: "8", lg: "42px" }}
-      px={{ base: "4", md: "8", lg: "12", xl: "110px" }}
+      py={{ base: "8", md: "8", lg: "42px" }}
+      px={{ base: "0px", md: "8", lg: "12", xl: "110px", "2xl": "32" }}
     >
       <Grid justifyContent="center" alignItems="center">
-        <Heading size="xl">Working Experiences</Heading>
+        <Heading size={{ base: "lg", md: "xl" }}>My Journey</Heading>
         <Divider
           borderBottomWidth="2px"
           mt="4"
@@ -50,17 +43,17 @@ const WorkEperiences = () => {
         />
       </Grid>
       <ChakraCarousel gap={32}>
-        {data.slice(10, 15).map((post: any, index) => (
+        {workExperienceData.map((workExperience) => (
           <Box
             mt="40px"
             width="full"
-            key={index}
+            key={workExperience.title}
             bg={bgBasedOnColorMode}
             color="white"
             borderRadius="40px"
-            pt="40px"
-            pl="56px"
-            pr="47px"
+            pt={{ base: "20px", md: "40px" }}
+            pl={{ base: "3", md: "56px" }}
+            pr={{ base: "3", md: "47px" }}
             pb="31px"
           >
             <VStack mb={6}>
@@ -69,7 +62,7 @@ const WorkEperiences = () => {
                 textAlign="left"
                 w="full"
               >
-                Frontend Engineer - Full Time
+                {`${workExperience.title} - ${workExperience.employmentType}`}
               </Heading>
               <Text
                 size="sm"
@@ -78,49 +71,24 @@ const WorkEperiences = () => {
                 mt="0px !important"
                 mb="12px !important"
               >
-                Jan 2022 - Nov 2022
+                {workExperience.period}
               </Text>
-              <HStack gap={2} w="full" alignItems="flex-start">
-                <CheckCircleIcon boxSize="22px" color="white" mt="1" />
-                <Text size="sm" fontWeight="500">
-                  Involved in the delivery of the Prakerja Project. This project
-                  includes developing and adjusting the website and mobile apps
-                  to follow the government&apos;s latest rules. Resulting in
-                  billions of Rupiah of revenue by winning the Prakerja Market.
-                </Text>
-              </HStack>
-              <HStack gap={2} w="full" alignItems="flex-start">
-                <CheckCircleIcon boxSize="22px" color="white" mt="1" />
-                <Text size="sm" fontWeight="500">
-                  Involved in the delivery of the Prakerja Project. This project
-                  includes developing and adjusting the website and mobile apps
-                  to follow the government&apos;s latest rules. Resulting in
-                  billions of Rupiah of revenue by winning the Prakerja Market.
-                </Text>
-              </HStack>
-              <HStack gap={2} w="full" alignItems="flex-start">
-                <CheckCircleIcon boxSize="22px" color="white" mt="1" />
-                <Text size="sm" fontWeight="500">
-                  Involved in the delivery of the Prakerja Project. This project
-                  includes developing and adjusting the website and mobile apps
-                  to follow the government&apos;s latest rules. Resulting in
-                  billions of Rupiah of revenue by winning the Prakerja Market.
-                </Text>
-              </HStack>
-              <HStack gap={2} w="full" alignItems="flex-start">
-                <CheckCircleIcon boxSize="22px" color="white" mt="1" />
-                <Text size="sm" fontWeight="500">
-                  Involved in the delivery of the Prakerja Project. This project
-                  includes developing and adjusting the website and mobile apps
-                  to follow the government&apos;s latest rules. Resulting in
-                  billions of Rupiah of revenue by winning the Prakerja Market.
-                </Text>
-              </HStack>
+              {workExperience.description.map((desc) => (
+                <HStack gap={2} w="full" alignItems="flex-start" key={desc}>
+                  <CheckCircleIcon boxSize="22px" color="white" mt="1" />
+                  <Text size="sm" fontWeight="500">
+                    {desc}
+                  </Text>
+                </HStack>
+              ))}
             </VStack>
 
             <Button
               borderRadius="25px"
               bg="linear-gradient(180deg, #FAFEFF 0%, #FFFFFF 100%)"
+              _hover={{
+                bg: "linear-gradient(180deg, #FAFEFF 0%, #FFFFFF 100%)",
+              }}
               mt="8"
             >
               <Text
@@ -133,13 +101,17 @@ const WorkEperiences = () => {
               </Text>
             </Button>
             <Flex justifyContent="flex-end">
-              <Box>
-                <Heading size="xl">Ruangguru</Heading>
-                <Divider
-                  borderBottomWidth="2px"
-                  mt="4"
-                  borderColor={borderColorBasedOnColorMode}
-                />
+              <Box as="div">
+                <Heading
+                  size={{ base: "lg", md: "xl" }}
+                  mt={{ base: "8", md: "0" }}
+                  as="a"
+                  href="https://ruangguru.com"
+                  target="_blank"
+                >
+                  {workExperience.company}
+                </Heading>
+                <Divider borderBottomWidth="4px" mt="4" borderColor="yellow" />
               </Box>
             </Flex>
           </Box>

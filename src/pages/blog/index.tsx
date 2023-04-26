@@ -1,5 +1,6 @@
-const BlogPage = () => {
-  return <div>BlogPage</div>;
-};
+import Blog from "src/components/blog";
 
+function BlogPage() {
+  return <Blog />;
+}
 export default BlogPage;

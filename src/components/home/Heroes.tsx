@@ -8,7 +8,7 @@ import {
   Divider,
   Box,
   useColorModeValue,
-  useBreakpointValue,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 const BrandingSection = () => {
@@ -89,20 +89,23 @@ const AnimationSection = () => {
 };
 
 const Heroes = () => {
-  const isMobileView = useBreakpointValue({ base: true, md: false });
+  const [isMobileSize] = useMediaQuery("(max-width: 500px)", {
+    ssr: true,
+    fallback: false,
+  });
 
   return (
     <Grid
       justifyContent="center"
       alignItems="center"
       py={{ base: "2", md: "4" }}
-      px={{ base: "4", md: "8", lg: "12", xl: "24" }}
+      px={{ base: "4", md: "8", lg: "12", xl: "24", "2xl": "32" }}
     >
       <GridItem colStart={1} colEnd={[5, 3, 3, 3]} pb={{ xl: "12" }}>
-        {isMobileView ? <AnimationSection /> : <BrandingSection />}
+        {isMobileSize ? <AnimationSection /> : <BrandingSection />}
       </GridItem>
       <GridItem colStart={[1, 3, 3, 3]} colEnd={[5, 6, 6, 6]}>
-        {isMobileView ? <BrandingSection /> : <AnimationSection />}
+        {isMobileSize ? <BrandingSection /> : <AnimationSection />}
       </GridItem>
     </Grid>
   );

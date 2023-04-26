@@ -1,18 +1,17 @@
-import Footer from "src/containers/Footer";
-import Header from "src/containers/Header";
+import Layout from "src/containers/layout";
 import Heroes from "./Heroes";
 import Contact from "./Contact";
 import WorkEperiences from "./WorkExperiences";
+import Portfolios from "./Portfolios";
 
 const Home = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <Heroes />
       <WorkEperiences />
+      <Portfolios />
       <Contact />
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
