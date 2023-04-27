@@ -9,10 +9,6 @@ const headerMenus: HeaderMenu[] = [
     path: "/blog",
   },
   {
-    name: "Discord",
-    path: "/discord",
-  },
-  {
     name: "About",
     path: "/about",
   },
