@@ -1,122 +1,124 @@
+import Image from "next/image";
 import {
   Heading,
-  Button,
-  VStack,
-  HStack,
-  Text,
-  Flex,
   Box,
   Grid,
   useColorModeValue,
   Divider,
+  GridItem,
+  AspectRatio,
+  Text,
+  List,
+  ListItem,
+  ListIcon,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Center,
 } from "@chakra-ui/react";
-import { CheckCircleIcon } from "@chakra-ui/icons";
-
-import ChakraCarousel from "src/containers/ChakraCarousel";
 import { workExperienceData } from "src/constant/workExperience";
+import { MdCheckCircle } from "react-icons/md";
+import React from "react";
 
 const WorkEperiences = () => {
-  const bgBasedOnColorMode = useColorModeValue(
-    "linear-gradient(180deg, #00C0FD 0%, #0056FD 100%)",
-    "personalDark.400"
-  );
-
   const borderColorBasedOnColorMode = useColorModeValue(
     "personalLight.300",
     "personalDark.100"
   );
 
-  // TODO: USE THIS COMPONENT FOR TALK SECTION
-  // TODO: REPLACE THIS SECTION WITH THE ONE LOOKS LIKE GARY SHENG
+  const accordionBgBasedOnColorMode = useColorModeValue(
+    "blackAlpha.50",
+    "gray.600"
+  );
 
   return (
     <Box
       py={{ base: "8", md: "8", lg: "42px" }}
       px={{ base: "0px", md: "8", lg: "12", xl: "110px", "2xl": "32" }}
     >
-      <Grid justifyContent="center" alignItems="center">
-        <Heading size={{ base: "lg", md: "xl" }}>My Journey</Heading>
+      <Grid
+        justifyContent="center"
+        alignItems="center"
+        mb={{ base: "4", md: "2" }}
+      >
+        <Heading size="xl">My Journey</Heading>
         <Divider
           borderBottomWidth="2px"
           mt="4"
           borderColor={borderColorBasedOnColorMode}
         />
       </Grid>
-      <ChakraCarousel gap={32}>
-        {workExperienceData.map((workExperience) => (
-          <Box
-            mt="40px"
-            width="full"
-            key={workExperience.title}
-            bg={bgBasedOnColorMode}
-            color="white"
-            borderRadius="40px"
-            pt={{ base: "20px", md: "40px" }}
-            pl={{ base: "3", md: "56px" }}
-            pr={{ base: "3", md: "47px" }}
-            pb="31px"
-          >
-            <VStack mb={6}>
-              <Heading
-                fontSize={{ base: "xl", md: "2xl" }}
-                textAlign="left"
-                w="full"
-              >
-                {`${workExperience.title} - ${workExperience.employmentType}`}
-              </Heading>
-              <Text
-                size="sm"
-                textAlign="left"
-                w="full"
-                mt="0px !important"
-                mb="12px !important"
-              >
-                {workExperience.period}
-              </Text>
-              {workExperience.description.map((desc) => (
-                <HStack gap={2} w="full" alignItems="flex-start" key={desc}>
-                  <CheckCircleIcon boxSize="22px" color="white" mt="1" />
-                  <Text size="sm" fontWeight="500">
-                    {desc}
-                  </Text>
-                </HStack>
-              ))}
-            </VStack>
 
-            <Button
-              borderRadius="25px"
-              bg="linear-gradient(180deg, #FAFEFF 0%, #FFFFFF 100%)"
-              _hover={{
-                bg: "linear-gradient(180deg, #FAFEFF 0%, #FFFFFF 100%)",
-              }}
-              mt="8"
+      {workExperienceData.map((workExperience) => (
+        <Grid
+          pt={{ base: "2", md: "8" }}
+          pb={{ base: "4", sm: "0" }}
+          templateColumns="repeat(5, 1fr)"
+          gap={{ base: 2, md: 10 }}
+          px={{ base: "4" }}
+          key={workExperience.title}
+        >
+          <GridItem colSpan={{ base: 5, md: 1 }} rowSpan={{ md: 1 }}>
+            <AspectRatio maxW="200px" ratio={4 / 3}>
+              <Image
+                alt={workExperience.company}
+                src={`/assets/image/${workExperience.imageName}`}
+                style={{ objectFit: "cover" }}
+                width={200}
+                height={150}
+              />
+            </AspectRatio>
+          </GridItem>
+          <GridItem colSpan={{ base: 5, md: 4 }} rowSpan={{ md: 3 }}>
+            <Heading
+              fontSize={{ base: "xl", md: "2xl" }}
+              textAlign="left"
+              w="full"
             >
-              <Text
-                size="sm"
-                bgGradient="linear(to-l, #4299E1, #3182CE)"
-                bgClip="text"
-                fontWeight="600"
-              >
-                See Detail
-              </Text>
-            </Button>
-            <Flex justifyContent="flex-end">
-              <Box as="div">
-                <Heading
-                  size={{ base: "lg", md: "xl" }}
-                  mt={{ base: "8", md: "0" }}
-                  as="a"
-                  href="https://ruangguru.com"
-                  target="_blank"
-                >
-                  {workExperience.company}
-                </Heading>
-                <Divider borderBottomWidth="4px" mt="4" borderColor="yellow" />
-              </Box>
-            </Flex>
-          </Box>
-        ))}
-      </ChakraCarousel>
+              {`${workExperience.title}`}
+            </Heading>
+            <Heading size="md" mb="2">
+              {`${workExperience.company} - ${workExperience.employmentType}`}
+            </Heading>
+            <Heading
+              size="sm"
+              textAlign="left"
+              w="full"
+              mb="12px"
+              color="yellow.500"
+            >
+              {workExperience.period}
+            </Heading>
+            <Text size="sm" my="4">
+              {workExperience.description}
+            </Text>
+
+            <Accordion allowMultiple>
+              <AccordionItem>
+                <AccordionButton pl="2" bg={accordionBgBasedOnColorMode}>
+                  <Box as="span" flex="1" textAlign="left">
+                    See Detail Contribution
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+
+                <AccordionPanel pb={4} pl={0}>
+                  <List spacing={3}>
+                    {workExperience.contributions.map((contribution) => (
+                      <ListItem key={contribution}>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        {contribution}
+                      </ListItem>
+                    ))}
+                  </List>
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
+          </GridItem>
+        </Grid>
+      ))}
     </Box>
   );
 };
