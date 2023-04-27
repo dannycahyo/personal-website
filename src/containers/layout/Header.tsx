@@ -18,6 +18,8 @@ import { motion } from "framer-motion";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaMoon, FaSun } from "react-icons/fa";
 
+import { headerMenus } from "src/constant/header";
+
 const Header = () => {
   const [menu, setMenu] = React.useState(false);
   const { toggleColorMode, colorMode } = useColorMode();
@@ -73,39 +75,24 @@ const Header = () => {
         alignItems="center"
         display={["none", "none", "flex"]}
       >
-        <GridItem colStart={1} colEnd={2} px="6">
-          <MotionHeading
-            variants={headingParts}
-            whileHover="hover"
-            whileTap="tap"
-            size="md"
-            fontWeight="normal"
+        {headerMenus.map((menu, index) => (
+          <GridItem
+            colStart={index * 2 + 1}
+            colEnd={index * 2 + 2}
+            px="6"
+            key={menu.name}
           >
-            <Link href="/blog">Blog</Link>
-          </MotionHeading>
-        </GridItem>
-        <GridItem colStart={3} colEnd={4} px="6">
-          <MotionHeading
-            variants={headingParts}
-            whileHover="hover"
-            whileTap="tap"
-            size="md"
-            fontWeight="normal"
-          >
-            <Link href="/about">About</Link>
-          </MotionHeading>
-        </GridItem>
-        <GridItem colStart={5} colEnd={6} pl="6">
-          <MotionIconButton
-            variants={headingParts}
-            whileHover="hover"
-            aria-label="exit-menu"
-            icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
-            onClick={toggleColorMode}
-            size="lg"
-            borderRadius="full"
-          />
-        </GridItem>
+            <MotionHeading
+              variants={headingParts}
+              whileHover="hover"
+              whileTap="tap"
+              size="md"
+              fontWeight="normal"
+            >
+              <Link href={menu.path}>{menu.name}</Link>
+            </MotionHeading>
+          </GridItem>
+        ))}
       </Grid>
       <Box display={["flex", "flex", "none"]}>
         <MotionIconButton
@@ -156,34 +143,26 @@ const Header = () => {
               borderRadius="full"
             />
             <MotionBox my="32" mx="auto">
-              <MotionHeading
-                textAlign="center"
-                fontWeight="normal"
-                size="lg"
-                my="8"
-                initial={{ rotate: 180 }}
-                animate={{
-                  rotate: 360,
-                  transition: { delay: 0.5, duration: 1, type: "spring" },
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Link href="/blog">Blog</Link>
-              </MotionHeading>
-              <MotionHeading
-                textAlign="center"
-                fontWeight="normal"
-                size="lg"
-                my="8"
-                initial={{ rotate: 180 }}
-                animate={{
-                  rotate: 360,
-                  transition: { delay: 0.7, duration: 1, type: "spring" },
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Link href="/about">About</Link>
-              </MotionHeading>
+              {headerMenus.map((menu, index) => {
+                const delay = index * 0.2 + 0.5;
+                return (
+                  <MotionHeading
+                    key={menu.name}
+                    textAlign="center"
+                    fontWeight="normal"
+                    size="lg"
+                    my="8"
+                    initial={{ rotate: 180 }}
+                    animate={{
+                      rotate: 360,
+                      transition: { delay, duration: 1, type: "spring" },
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link href={menu.path}>{menu.name}</Link>
+                  </MotionHeading>
+                );
+              })}
             </MotionBox>
           </MotionBox>
         )}
