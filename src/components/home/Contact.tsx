@@ -36,15 +36,11 @@ const Contact = () => {
       alignItems="center"
       bg={bgBasedOnColorMode}
       py={{ base: "8", md: "8", lg: "53px" }}
-      px={{ base: "8", md: "12", lg: "24", xl: "24", "2xl": "32" }}
+      px={{ base: "8", md: "12", lg: "12", xl: "24", "2xl": "32" }}
     >
       <Grid justifyContent="center" alignItems="center">
         <GridItem>
-          <Heading
-            size={{ base: "lg", md: "xl" }}
-            mb={{ base: "16px", md: "0" }}
-            textAlign="center"
-          >
+          <Heading size="xl" mb={{ base: "16px", md: "0" }} textAlign="center">
             Let’s Connect and Say Hi
           </Heading>
           <Divider

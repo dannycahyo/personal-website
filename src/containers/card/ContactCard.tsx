@@ -1,10 +1,10 @@
 import Image from "next/image";
 import {
-  Avatar,
   Box,
   Button,
   HStack,
   Heading,
+  Text,
   Tag,
   TagLabel,
   useColorModeValue,
@@ -40,7 +40,11 @@ const ContactCard: React.FC<ContactCardProps> = ({ name, label, urlLink }) => {
           src={`/assets/image/${name}.png`}
         />
         <Tag size="lg" colorScheme="cyan" borderRadius="full">
-          <TagLabel>{label}</TagLabel>
+          <TagLabel>
+            <Text size={{ base: "sm", md: "md", lg: "md", xl: "xs" }}>
+              {label}
+            </Text>
+          </TagLabel>
         </Tag>
       </HStack>
       <Heading size="lg" mt="24px">

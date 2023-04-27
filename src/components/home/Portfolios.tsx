@@ -38,7 +38,7 @@ const Portfolios = () => {
           justifyContent="center"
           alignItems="center"
           mt="36px"
-          pt="40px"
+          pt={{ base: "0", md: "40px" }}
           pb={{ base: "12", md: "90px" }}
           px={{ base: "4", md: "8", lg: "8", xl: "24", "2xl": "32" }}
         >

@@ -23,7 +23,7 @@ const portfolioData: PortfolioCardProps[] = [
   },
   {
     name: "Majer Otang",
-    urlLink: "https://majer-otang.vercel.app/",
+    urlLink: "https://majer-otang-kontrakan.vercel.app/",
     githubRepoLink: "https://github.com/mnindrazaka/majer-otang",
   },
   {
