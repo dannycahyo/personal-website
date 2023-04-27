@@ -93,6 +93,21 @@ const Header = () => {
             </MotionHeading>
           </GridItem>
         ))}
+        <GridItem
+          colStart={headerMenus.length * 2 + 1}
+          colEnd={headerMenus.length * 2 + 2}
+          px="6"
+        >
+          <MotionIconButton
+            variants={headingParts}
+            whileHover="hover"
+            aria-label="exit-menu"
+            icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
+            onClick={toggleColorMode}
+            size="lg"
+            borderRadius="full"
+          />
+        </GridItem>
       </Grid>
       <Box display={["flex", "flex", "none"]}>
         <MotionIconButton
