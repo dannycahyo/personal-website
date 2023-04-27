@@ -33,6 +33,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       bg={cardBgBasedOnTheme}
       as="a"
       href={urlLink}
+      target="_blank"
       backdropFilter="blur(25px)"
       borderRadius="20px"
       px="16px"
