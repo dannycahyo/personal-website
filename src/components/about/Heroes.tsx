@@ -57,8 +57,10 @@ const Heroes = () => {
         fontWeight="500"
         textAlign="center"
       >
-        I am a User Interface Designer & Front-end Developer. I design
-        delightful products & code web templates.
+        A passionate frontend developer who&apos;s always eager to learn new
+        things. With a sharp focus on deep-diving into frontend development,
+        Danny is also an engaging and open content creator and speaker, ready to
+        share knowledge and inspire others to grow in their own tech journeys.
       </Text>
       <Box>
         <Image
