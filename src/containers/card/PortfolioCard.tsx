@@ -57,7 +57,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         }}
         height={237}
         width={380}
-        src={`/assets/image/${name}.jpg`}
+        src={`/assets/image/portfolios/${name}.jpg`}
       />
       <Heading size="md" my="18px">
         {name}
