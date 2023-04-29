@@ -53,14 +53,15 @@ const Heroes = () => {
       </Box>
       <Text
         size={{ base: "md", md: "lg" }}
-        mt="24px"
+        mt="20px"
+        mb="4"
         fontWeight="500"
         textAlign="center"
       >
-        A passionate frontend developer who&apos;s always eager to learn new
-        things. With a sharp focus on deep-diving into frontend development,
-        Danny is also an engaging and open content creator and speaker, ready to
-        share knowledge and inspire others to grow in their own tech journeys.
+        I strive to create valuable content that cuts through the noise and
+        provides real value those who engage with it. Through speaking and
+        teaching, I aim to help other engineers grow their skills and reach
+        their full potential in the tech industry.
       </Text>
       <Box>
         <Image
