@@ -20,7 +20,7 @@ const Home = () => {
         <meta property="og:title" content="Danny Dwi Cahyono" />
         <meta
           property="og:description"
-          content="Welcome to my personal website!"
+          content="Welcome to my personal website! Get to know me through my quick introduction and check out my working experience, portfolios, and contacts. Let's connect and see how we can collaborate."
         />
         <meta
           property="og:image"

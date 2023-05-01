@@ -18,7 +18,7 @@ const Blog = () => {
         <meta property="og:title" content="Danny's Blog" />
         <meta
           property="og:description"
-          content="Read my latest blog posts on various topics"
+          content="Check out Danny Dwi Cahyono's latest blog posts on software engineering, web development, and more. Stay up-to-date on the latest trends and insights in the industry."
         />
         <meta
           property="og:image"
