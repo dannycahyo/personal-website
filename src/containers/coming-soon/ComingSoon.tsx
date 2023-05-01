@@ -1,16 +1,9 @@
 import { Button, Container, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const ComingSoon = () => {
   const route = useRouter();
-
-  useEffect(() => {
-    setTimeout(() => {
-      route.push("/");
-    }, 10000);
-  }, [route]);
 
   const handleNavigationToHomePage = () => route.push("/");
 
