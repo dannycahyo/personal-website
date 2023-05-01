@@ -13,7 +13,8 @@ const About = () => {
       <ContentCreator />
       <TechSpeaker />
       <CoreValues />
-      <Hobbies />
+      {/* TODO: Enable this component once the UI is finished */}
+      {/* <Hobbies /> */}
     </Layout>
   );
 };
