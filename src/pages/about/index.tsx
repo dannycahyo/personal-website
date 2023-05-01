@@ -4,4 +4,8 @@ function AboutPage() {
   return <About />;
 }
 
+export async function getServerSideProps() {
+  return { props: {} };
+}
+
 export default AboutPage;
