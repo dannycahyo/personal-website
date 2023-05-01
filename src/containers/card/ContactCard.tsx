@@ -25,7 +25,6 @@ const ContactCard: React.FC<ContactCardProps> = ({ name, label, urlLink }) => {
 
   return (
     <Box
-      height="256px"
       bg={bgCardBasedOnColorMode}
       width="full"
       borderRadius="8px"
