@@ -1,10 +1,10 @@
-import React from "react";
 import Layout from "src/containers/layout";
+import ComingSoon from "src/containers/coming-soon/ComingSoon";
 
 const Blog = () => {
   return (
     <Layout>
-      <h1>Blog Page</h1>
+      <ComingSoon />
     </Layout>
   );
 };
