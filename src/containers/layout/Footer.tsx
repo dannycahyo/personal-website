@@ -59,6 +59,7 @@ const Footer = () => {
                 }}
                 as="a"
                 href="mailto:@dannydwicahyono@gmail.com"
+                target="_blank"
                 aria-label="Email"
                 icon={<AiTwotoneMail fontSize="1.25rem" />}
               />
@@ -71,6 +72,7 @@ const Footer = () => {
                 }}
                 as="a"
                 href="https://www.linkedin.com/in/danny-cahyo"
+                target="_blank"
                 aria-label="LinkedIn"
                 icon={<FaLinkedin fontSize="1.25rem" />}
               />
@@ -83,6 +85,7 @@ const Footer = () => {
                 }}
                 as="a"
                 href="https://github.com/dannycahyo"
+                target="_blank"
                 aria-label="GitHub"
                 icon={<FaGithub fontSize="1.25rem" />}
               />

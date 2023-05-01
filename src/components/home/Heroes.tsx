@@ -51,6 +51,9 @@ const BrandingSection = () => {
         color="white"
         width="200px"
         height="44px"
+        as="a"
+        href="mailto:@dannydwicahyono@gmail.com"
+        target="_blank"
         bg="linear-gradient(90.55deg, #256BF4 -13.39%, #3AC1DE 99.74%)"
         _hover={{
           bg: "linear-gradient(90.55deg, #256BF4 -13.39%, #3AC1DE 99.74%)",
