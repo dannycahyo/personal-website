@@ -1,6 +1,7 @@
 import {
   Box,
   ButtonGroup,
+  Center,
   Divider,
   Flex,
   Heading,
@@ -20,7 +21,7 @@ const Footer = () => {
   return (
     <Box
       as="footer"
-      py={{ base: "2", md: "8" }}
+      py={{ base: "4", md: "8" }}
       px={{ base: "4", md: "8", lg: "12", xl: "12", "2xl": "32" }}
     >
       <Divider mb="6" />
@@ -41,7 +42,7 @@ const Footer = () => {
             <Text>Danny Dwi Cahyono {new Date().getFullYear()}</Text>
           </Text>
         </Stack>
-        <Stack pt={{ base: "3", md: "0" }} as="div">
+        <Stack pt={{ base: "3", md: "0" }} alignItems="center">
           <Heading size={{ base: "md", md: "lg" }}>Get in touch!</Heading>
           <Stack
             justify="space-between"
@@ -93,6 +94,14 @@ const Footer = () => {
           </Stack>
         </Stack>
       </Flex>
+      <Box mt="4">
+        <Text textAlign="center">
+          Design with <Text as="span">❤️</Text> by @maretacodes
+        </Text>
+        <Center>
+          <Divider mt="4" width="20%" />
+        </Center>
+      </Box>
     </Box>
   );
 };

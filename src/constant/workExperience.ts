@@ -13,7 +13,7 @@ const workExperienceData: WorkExperience[] = [
     title: "Frontend Engineer",
     employmentType: "Full Time",
     description:
-      "Committing to an edutech company was an exciting opportunity to continue my passion for creating technology solutions for education. I was tasked with working on the Learning Management System, which involved providing applications for students, teachers, and parents to create a seamless online learning environment. Working closely with the CTO allowed me to gain a deeper understanding of the product's end-to-end process and the overall business model. However, we faced a challenging phase during the tech winter period, where we had to ensure that our product features met the business requirements to keep the company moving forward. Despite the difficulties, I was determined to contribute my skills and expertise to help the team overcome these obstacles and deliver the best product possible.",
+      "Committing to an edutech company was an exciting opportunity to continue my passion for creating technology solutions for education. I was tasked with working on the Learning Management System, which involved providing applications for students, teachers, and parents to create a seamless online learning environment. Working closely with the CTO allowed me to gain a deeper understanding of the product's end-to-end process and the overall business model. ",
 
     company: "Gredu Asia",
     period: "Dec 2022 - Present",
@@ -31,7 +31,7 @@ const workExperienceData: WorkExperience[] = [
     title: "Software Engineer",
     employmentType: "Full Time",
     description:
-      "Joining the largest edutech company in Southeast Asia was a huge milestone in my career. It was exciting to work on a big and supportive team, where I was able to see and coordinate various teams and roles in tech, such as the platform team and the team focused on delivering products. It was a great opportunity to meet so many skillful people in each of these areas, and gain a wealth of knowledge and skill. I remember feeling a bit overwhelmed when I first began working on the big code base, and developing both web and mobile apps, but I quickly adapted and was able to deliver great products to the users. It was really fulfilling to see how my contributions made an impact. Throughout the experience, I was able to improve my frontend skills in all aspects, and it gave me the confidence to continue growing in my career.",
+      "Joining the largest edutech company in Southeast Asia was a huge milestone in my career. It was exciting to work on a big and supportive team, where I was able to see and coordinate various teams and roles in tech, such as the platform team and the team focused on delivering products. It was a great opportunity to meet so many skillful people in each of these areas, and gain a wealth of knowledge and skill. Throughout the experience, I was able to improve my frontend skills in all aspects, and it gave me the confidence to continue growing in my career.",
     company: "Ruangguru",
     period: "Jan 2022 - Nov 2022",
     imageName: "RuangguruLogo.png",
