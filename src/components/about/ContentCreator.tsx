@@ -67,6 +67,7 @@ const ContentVideoSection = () => {
           <IconButton
             pos="absolute"
             colorScheme="blackAlpha"
+            color="white"
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
@@ -94,6 +95,7 @@ const ContentVideoSection = () => {
           <IconButton
             pos="absolute"
             colorScheme="blackAlpha"
+            color="white"
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
@@ -244,7 +246,7 @@ const ContentCreator = () => {
   return (
     <Box
       py={{ base: "2", md: "12", lg: "16" }}
-      px={{ base: "5", md: "12", lg: "4", xl: "12", "2xl": "32" }}
+      px={{ base: "5", md: "12", lg: "8", xl: "12", "2xl": "32" }}
     >
       <SimpleGrid
         columns={{ base: 1, md: 1, lg: 2 }}
