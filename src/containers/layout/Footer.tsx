@@ -96,7 +96,7 @@ const Footer = () => {
       </Flex>
       <Box mt="4">
         <Text textAlign="center">
-          Design with <Text as="span">❤️</Text> by @maretacodes
+          Special thanks to @maretacodes for the website design
         </Text>
         <Center>
           <Divider mt="4" width="20%" />
