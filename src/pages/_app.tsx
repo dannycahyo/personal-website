@@ -1,4 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Fonts from "src/font";
 import theme from "src/theme";
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </ChakraProvider>
   );
 }
