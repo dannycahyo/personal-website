@@ -53,15 +53,17 @@ const Contact = () => {
       </Grid>
       {isMobileSize ? (
         <ChakraCarousel gap={6}>
-          {contactData?.map((contact) => (
-            <React.Fragment key={contact.name}>
-              <ContactCard
-                name={contact.name}
-                label={contact.label}
-                urlLink={contact.urlLink}
-              />
-            </React.Fragment>
-          ))}
+          {contactData
+            .filter((contact) => contact.name !== "YouTube")
+            .map((contact) => (
+              <React.Fragment key={contact.name}>
+                <ContactCard
+                  name={contact.name}
+                  label={contact.label}
+                  urlLink={contact.urlLink}
+                />
+              </React.Fragment>
+            ))}
         </ChakraCarousel>
       ) : (
         <SimpleGrid
@@ -70,15 +72,17 @@ const Contact = () => {
           mt="36px"
           py={{ base: "2", md: "4", lg: "37px" }}
         >
-          {contactData?.map((contact) => (
-            <React.Fragment key={contact.name}>
-              <ContactCard
-                name={contact.name}
-                label={contact.label}
-                urlLink={contact.urlLink}
-              />
-            </React.Fragment>
-          ))}
+          {contactData
+            .filter((contact) => contact.name !== "YouTube")
+            .map((contact) => (
+              <React.Fragment key={contact.name}>
+                <ContactCard
+                  name={contact.name}
+                  label={contact.label}
+                  urlLink={contact.urlLink}
+                />
+              </React.Fragment>
+            ))}
         </SimpleGrid>
       )}
     </Box>
