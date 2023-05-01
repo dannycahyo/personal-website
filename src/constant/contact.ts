@@ -17,7 +17,7 @@ const contactData: ContactCardProps[] = [
     urlLink: "https://github.com/dannycahyo",
   },
   {
-    name: "TikTok",
+    name: "Tiktok",
     label: "Content Creation",
     urlLink: "https://www.tiktok.com/@dannycahyo",
   },
