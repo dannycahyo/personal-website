@@ -21,6 +21,11 @@ const contactData: ContactCardProps[] = [
     label: "Content Creation",
     urlLink: "https://www.tiktok.com/@dannycahyo",
   },
+  {
+    name: "YouTube",
+    label: "Video Content",
+    urlLink: "https://www.youtube.com/channel/UCPLAuz1bnoiWxENzngFRoYw",
+  },
 ];
 
 export { contactData };

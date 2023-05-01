@@ -10,30 +10,21 @@ type WorkExperience = {
 
 const workExperienceData: WorkExperience[] = [
   {
-    title: "Software Engineer",
-    employmentType: "Internship",
-    description:
-      "Starting my tech career with my first internship was a dream come true. I gained real-world project experience for the first time and learned a lot about how the industry works. I was impressed by the internal library developed by the company, and it was amazing to see how my contributions were making an impact. This experience gave me the confidence to pursue a career in tech and I'm grateful for the opportunity to have started my journey with such a great company.",
-    company: "Hash Rekayasa Teknologi",
-    period: "Jun 2021 - Sep 2021",
-    imageName: "HashLogo.jpeg",
-    contributions: [
-      "Developed and maintained web applications for Licensing Services using Next, Typescript, GraphQL, Material UI, and an internal company library. These applications streamlined the licensing process, resulting in faster turnaround times and increased efficiency for both customers and internal stakeholders.",
-      "Collaborated with cross-functional teams to redesign outdated website layouts into modern and intuitive designs, resulting in a significant improvement in user engagement and overall customer satisfaction.",
-    ],
-  },
-  {
     title: "Frontend Engineer",
-    employmentType: "Part Time",
+    employmentType: "Full Time",
     description:
-      "Joining an edutech company after my internship was the next milestone in my career journey. As someone who's passionate about education, it was a dream come true to be able to work in a company that empowers people through technology. I was given the responsibility to design and architect the frontend side of the product. Working on the project using Scrum methodologies allowed me to gain experience with agile development and how to collaborate more effectively with my team. The experience helped me grow both as a developer and as a team member.",
-    company: "Kompeten CO",
-    period: "Aug 2021 - Dec 2021",
-    imageName: "KompetenLogo.jpeg",
+      "Committing to an edutech company was an exciting opportunity to continue my passion for creating technology solutions for education. I was tasked with working on the Learning Management System, which involved providing applications for students, teachers, and parents to create a seamless online learning environment. Working closely with the CTO allowed me to gain a deeper understanding of the product's end-to-end process and the overall business model. However, we faced a challenging phase during the tech winter period, where we had to ensure that our product features met the business requirements to keep the company moving forward. Despite the difficulties, I was determined to contribute my skills and expertise to help the team overcome these obstacles and deliver the best product possible.",
+
+    company: "Gredu Asia",
+    period: "Dec 2022 - Present",
+    imageName: "GreduLogo.jpeg",
     contributions: [
-      "Spearheaded the development of Career Guidance web applications using Next.js, React, and Chakra UI Framework. Ensured smooth operation and optimal performance by leveraging JavaScript and the latest technologies.",
-      "Elevated the performance, accessibility, and search engine optimization (SEO) of web applications through rigorous analysis and improvements using the Lighthouse tool. Resulted in an increased organic search presence and better performance of the website.",
-      "Implemented an event tracker using Firebase to analyze user behavior and optimize the business model. Provided valuable insights into user journeys and helped in evaluating the effectiveness of the current features.",
+      "Played a key role in the Frontend Team, including brainstorming, design screening, ideation, coordinating, and code review until the successful delivery of the product.",
+      "Responsible for tackling all of the bug fixes on the production environment, ensuring a seamless user experience for customers.",
+      "Took the initiative to develop an internal tool using Chat GPT API, which helped speed up the development mode from the Frontend side 2x faster.",
+      "Contributed to developing a report feature that enabled teachers to create digital learning reports for students. This feature replaced the traditional manual process of creating reports with a more efficient and digital solution, benefiting all stakeholders, including parents, students, and teachers. The introduction of this feature helped to streamline the reporting process and provide easy access to digital reports, improving the overall experience for all users.",
+      "Became the primary person responsible for implementing attendance features for students and teachers, which led to a higher level of engagement and loyalty from users, resulting in continued subscriptions.",
+      "Developed a new CMS from scratch for better content distribution for teachers in schools. The CMS aimed to allow teachers to easily share tasks, exercises, exams, and assignments, improving the learning experience for students.",
     ],
   },
   {
@@ -56,20 +47,29 @@ const workExperienceData: WorkExperience[] = [
   },
   {
     title: "Frontend Engineer",
-    employmentType: "Full Time",
+    employmentType: "Part Time",
     description:
-      "Joining other edutech company was an exciting opportunity to continue my passion for creating technology solutions for education. I was tasked with working on the Learning Management System, which involved providing applications for students, teachers, and parents to create a seamless online learning environment. Working closely with the CTO allowed me to gain a deeper understanding of the product's end-to-end process and the overall business model. However, we faced a challenging phase during the tech winter period, where we had to ensure that our product features met the business requirements to keep the company moving forward. Despite the difficulties, I was determined to contribute my skills and expertise to help the team overcome these obstacles and deliver the best product possible.",
-
-    company: "Gredu Asia",
-    period: "Dec 2022 - Present",
-    imageName: "GreduLogo.jpeg",
+      "Joining an edutech company after my internship was the next milestone in my career journey. As someone who's passionate about education, it was a dream come true to be able to work in a company that empowers people through technology. I was given the responsibility to design and architect the frontend side of the product. Working on the project using Scrum methodologies allowed me to gain experience with agile development and how to collaborate more effectively with my team. The experience helped me grow both as a developer and as a team member.",
+    company: "Kompeten CO",
+    period: "Aug 2021 - Dec 2021",
+    imageName: "KompetenLogo.jpeg",
     contributions: [
-      "Played a key role in the Frontend Team, including brainstorming, design screening, ideation, coordinating, and code review until the successful delivery of the product.",
-      "Responsible for tackling all of the bug fixes on the production environment, ensuring a seamless user experience for customers.",
-      "Took the initiative to develop an internal tool using Chat GPT API, which helped speed up the development mode from the Frontend side 2x faster.",
-      "Contributed to developing a report feature that enabled teachers to create digital learning reports for students. This feature replaced the traditional manual process of creating reports with a more efficient and digital solution, benefiting all stakeholders, including parents, students, and teachers. The introduction of this feature helped to streamline the reporting process and provide easy access to digital reports, improving the overall experience for all users.",
-      "Became the primary person responsible for implementing attendance features for students and teachers, which led to a higher level of engagement and loyalty from users, resulting in continued subscriptions.",
-      "Developed a new CMS from scratch for better content distribution for teachers in schools. The CMS aimed to allow teachers to easily share tasks, exercises, exams, and assignments, improving the learning experience for students.",
+      "Spearheaded the development of Career Guidance web applications using Next.js, React, and Chakra UI Framework. Ensured smooth operation and optimal performance by leveraging JavaScript and the latest technologies.",
+      "Elevated the performance, accessibility, and search engine optimization (SEO) of web applications through rigorous analysis and improvements using the Lighthouse tool. Resulted in an increased organic search presence and better performance of the website.",
+      "Implemented an event tracker using Firebase to analyze user behavior and optimize the business model. Provided valuable insights into user journeys and helped in evaluating the effectiveness of the current features.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    employmentType: "Internship",
+    description:
+      "Starting my tech career with my first internship was a dream come true. I gained real-world project experience for the first time and learned a lot about how the industry works. I was impressed by the internal library developed by the company, and it was amazing to see how my contributions were making an impact. This experience gave me the confidence to pursue a career in tech and I'm grateful for the opportunity to have started my journey with such a great company.",
+    company: "Hash Rekayasa Teknologi",
+    period: "Jun 2021 - Sep 2021",
+    imageName: "HashLogo.jpeg",
+    contributions: [
+      "Developed and maintained web applications for Licensing Services using Next, Typescript, GraphQL, Material UI, and an internal company library. These applications streamlined the licensing process, resulting in faster turnaround times and increased efficiency for both customers and internal stakeholders.",
+      "Collaborated with cross-functional teams to redesign outdated website layouts into modern and intuitive designs, resulting in a significant improvement in user engagement and overall customer satisfaction.",
     ],
   },
 ];
