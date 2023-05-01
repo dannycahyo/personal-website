@@ -66,7 +66,7 @@ const Heroes = () => {
       <Box>
         <Image
           alt="Danny Profile's Image"
-          src="/assets/image/JohnDoe.png"
+          src="/assets/image/DannyGG.png"
           width={420}
           height={468}
         />
@@ -79,7 +79,7 @@ const Heroes = () => {
         p={{ base: "6px 18px", md: "10px 24px" }}
         pos="absolute"
         bottom={32}
-        left={{ base: 8, md: 14, lg: 20, xl: 36 }}
+        left={{ base: 8, md: 14, lg: 20, xl: 48 }}
       >
         <Text size={{ base: "xs", md: "sm" }} fontWeight="600">
           Tech Speaker
@@ -106,7 +106,7 @@ const Heroes = () => {
         p={{ base: "6px 18px", md: "10px 24px" }}
         pos="absolute"
         bottom={32}
-        right={{ base: 4, md: 10, lg: 16, xl: 24 }}
+        right={{ base: 4, md: 10, lg: 16, xl: 32 }}
       >
         <Text size={{ base: "xs", md: "sm" }} fontWeight="600">
           Tech Content Creator
