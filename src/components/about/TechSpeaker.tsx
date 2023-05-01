@@ -33,7 +33,6 @@ const TechSpeaker = () => {
       centerContent
       maxW={{ base: "fit-content", md: "2xl", lg: "3xl", xl: "4xl" }}
       p="0px"
-      pt="4"
     >
       <Grid justifyContent="center" alignItems="center">
         <Heading size={{ base: "lg", md: "xl" }}>My Inspiring Talks</Heading>
