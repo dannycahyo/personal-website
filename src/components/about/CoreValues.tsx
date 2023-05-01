@@ -29,7 +29,7 @@ const TextSection = () => {
       />
       <Box mt="8">
         <Box pb="4">
-          <Heading size={{ md: "sm", lg: "md", xl: "lg" }}>
+          <Heading size={{ md: "sm", lg: "md" }}>
             A Lifelong Pursuit of Knowledge
           </Heading>
           <Text mt="2">
@@ -42,7 +42,7 @@ const TextSection = () => {
           </Text>
         </Box>
         <Box pb="4">
-          <Heading size={{ md: "sm", lg: "md", xl: "lg" }}>
+          <Heading size={{ md: "sm", lg: "md" }}>
             Spread kindness through sharing
           </Heading>
           <Text mt="2">
@@ -57,7 +57,7 @@ const TextSection = () => {
           </Text>
         </Box>
         <Box pb="4">
-          <Heading size={{ md: "sm", lg: "md", xl: "lg" }}>
+          <Heading size={{ md: "sm", lg: "md" }}>
             Synergy in Collaboration
           </Heading>
           <Text mt="2">
