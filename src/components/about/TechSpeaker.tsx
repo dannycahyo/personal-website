@@ -14,6 +14,7 @@ import {
   HStack,
   TagLabel,
   IconButton,
+  Stack,
 } from "@chakra-ui/react";
 
 import { FaYoutube } from "react-icons/fa";
@@ -51,7 +52,7 @@ const TechSpeaker = () => {
             key={event.title}
             bg={bgBasedOnColorMode}
             borderRadius="40px"
-            p={{ base: "20px", md: "40px" }}
+            p={{ base: "16px", md: "40px" }}
             pt="10px"
           >
             <Flex
@@ -62,7 +63,7 @@ const TechSpeaker = () => {
             >
               <Box>
                 <Heading
-                  fontSize={{ base: "xl", md: "md", lg: "lg", xl: "xl" }}
+                  fontSize={{ base: "md", md: "md", lg: "lg", xl: "xl" }}
                   lineHeight={{ base: "inherit" }}
                   textAlign="left"
                 >
@@ -76,7 +77,7 @@ const TechSpeaker = () => {
                     bg="#68D94A"
                     borderRadius="full"
                   />
-                  <Text size="sm" textAlign="left">
+                  <Text size={{ base: "xs", md: "sm" }} textAlign="left">
                     {event.date}
                   </Text>
                 </HStack>
@@ -112,7 +113,7 @@ const TechSpeaker = () => {
             </Center>
 
             <Flex justifyContent="space-between" alignItems="center" mt="4">
-              <HStack gap={2}>
+              <Stack gap={2} flexDir={{ base: "column", md: "row" }}>
                 <Button
                   borderRadius="25px"
                   bg="linear-gradient(90.55deg, #256BF4 -13.39%, #3AC1DE 99.74%)"
@@ -124,7 +125,7 @@ const TechSpeaker = () => {
                   as="a"
                   href={event.eventLink}
                   target="_blank"
-                  size={{ base: "md", lg: "lg" }}
+                  size={{ base: "sm", lg: "lg" }}
                 >
                   <Text size="sm" fontWeight="600">
                     See Detail
@@ -138,12 +139,13 @@ const TechSpeaker = () => {
                     icon={<FaYoutube fontSize="1.25rem" />}
                     variant="outline"
                     colorScheme="red"
+                    size="sm"
                   />
                 ) : null}
-              </HStack>
+              </Stack>
               <Box as="div">
                 <Heading
-                  size={{ base: "md", lg: "xl" }}
+                  size={{ base: "sm", lg: "xl" }}
                   as="a"
                   href={event.organizerLink}
                   target="_blank"
