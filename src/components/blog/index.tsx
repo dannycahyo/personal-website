@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "src/containers/layout";
 import ComingSoon from "src/containers/coming-soon/ComingSoon";
+import BlogList from "./BlogList";
 
 const Blog = () => {
   return (
@@ -25,7 +26,8 @@ const Blog = () => {
           content="assets/image/core-values/DannyCoreValues.jpg"
         />
       </Head>
-      <ComingSoon />
+      <BlogList />
+      {/* <ComingSoon /> */}
     </Layout>
   );
 };
