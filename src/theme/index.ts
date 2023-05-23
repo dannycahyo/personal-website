@@ -47,7 +47,7 @@ const theme = extendTheme({
     },
   },
   colors: {
-    black: "#041E44",
+    black: "#191a20",
     white: "#FFFFFF",
     personalDark: {
       100: "#1E4D85",

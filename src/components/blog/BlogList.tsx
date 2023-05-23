@@ -12,7 +12,9 @@ const BlogList = () => {
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3, xl: 3 }} spacing={8}>
         {Array.from({ length: 6 }, (_, i) => (
           <Box key={i} width="full">
-            <Link href={`/blog/${i + 1}`}>
+            <Link
+              href={`/blog/why-bother-learning-data-structures-and-algorithms`}
+            >
               <Image
                 src="/assets/image/portfolios/Majer Otang.jpg"
                 alt="Coming Soon Image"

@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <Layout>
       <Head>
-        <title>Danny Dwi Cahyono Blog</title>
+        <title>The Danny D. Cahyono Blog</title>
         <meta
           name="description"
           content="Check out Danny Dwi Cahyono's latest blog posts on software engineering, web development, and more. Stay up-to-date on the latest trends and insights in the industry."
