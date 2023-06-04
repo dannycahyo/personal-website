@@ -5,7 +5,7 @@ imgLink: https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4
 imgSource: Photo By Jose Manuel Infante
 imgSourceLink: https://unsplash.com/photos/cw-cj_nFa14
 category: Technical
-date: May 14th, 2023
+date: "2022-06-04"
 readEstimation: 5
 ---
 
@@ -37,7 +37,7 @@ Gaining a comprehensive understanding of algorithms and data structures allows y
 
 ```js
 function findOptimalSolution(problem, dataStructures, algorithms) {
-  let bestAlgorithm = null;
+  let bestAlgorithm;
   let lowestComplexity = Infinity;
 
   for (let i = 0; i < algorithms.length; i++) {
@@ -59,7 +59,7 @@ function findOptimalSolution(problem, dataStructures, algorithms) {
 
 ### In-depth understanding of underlying mechanisms
 
-A thorough knowledge of algorithms and data structures helps you understand what's happening under the hood when executing your code. This deeper understanding can assist in debugging your programs and producing more reliable code with fewer bugs, resulting in more efficient and robust software.
+A thorough comprehensive of algorithms and data structures helps you understand what's happening under the hood when executing your code. This deeper understanding can assist in debugging your programs and producing more reliable code with fewer bugs, resulting in more efficient and robust software.
 
 ```js
 function debugCode(code, understanding) {
