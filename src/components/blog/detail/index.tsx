@@ -110,6 +110,11 @@ const BlogDetail = ({
                 </code>
               );
             },
+            p: ({ node, ...props }) => (
+              <Text py="2" {...props}>
+                {props.children}
+              </Text>
+            ),
           }}
         >
           {content}
