@@ -58,7 +58,7 @@ const Header = () => {
     <Flex
       alignItems="center"
       py={{ base: "2", md: "8" }}
-      px={{ base: "0", md: "8", lg: "12", xl: "12", "2xl": "32" }}
+      px={{ base: "0", lg: "12", xl: "12", "2xl": "32" }}
       justifyContent="space-between"
       as="div"
     >

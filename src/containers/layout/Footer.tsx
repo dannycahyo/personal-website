@@ -24,7 +24,7 @@ const Footer = () => {
     <Box
       as="footer"
       py={{ base: "4", md: "8" }}
-      px={{ base: "4", md: "8", lg: "12", xl: "12", "2xl": "32" }}
+      px={{ base: "0", lg: "12", xl: "12", "2xl": "32" }}
     >
       <Divider mb="6" />
       <Flex
