@@ -38,6 +38,14 @@ const BlogDetail = ({
     fallback: false,
   });
 
+  const blogDate = new Date(date);
+
+  const formattedDate = blogDate.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+
   useEffect(() => {
     import("react-syntax-highlighter/dist/esm/styles/prism").then((module) => {
       setMarkdownTheme(module.darcula);
@@ -61,7 +69,7 @@ const BlogDetail = ({
         <Center flexDir="column" py={{ base: "4", md: "8" }}>
           <Box pb="8">
             <Heading size={{ base: "lg", md: "xl" }}>{title}</Heading>
-            <Text mt="2">{`${date} --- ${readEstimation} minutes read`}</Text>
+            <Text mt="2">{`${formattedDate} --- ${readEstimation} minutes read`}</Text>
           </Box>
           <Image
             src={imgLink}
