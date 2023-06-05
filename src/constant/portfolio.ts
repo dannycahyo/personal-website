@@ -18,7 +18,7 @@ const portfolioData: PortfolioCardProps[] = [
   },
   {
     name: "Try Out",
-    urlLink: "https://github.com/dannycahyo/try-out-app",
+    urlLink: "https://try-out-app.vercel.app/",
     githubRepoLink: "https://github.com/dannycahyo/try-out-app",
   },
   {
