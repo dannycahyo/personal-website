@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import { useState, useEffect } from "react";
 import {
   Box,
@@ -60,8 +61,29 @@ const BlogDetail = ({
     sm: isMobileSize ? "xs" : "sm",
   };
 
+  const matchResult = content.match(/## Background\s*\n(.+)/s);
+  const firstParagraph = matchResult ? matchResult[1] : "";
+
   return (
     <Layout>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={firstParagraph} />
+
+        <link
+          rel="canonical"
+          href={`https://dannydwicahyono.com/blog/${slug}`}
+        />
+        <meta
+          property="og:url"
+          content={`https://dannydwicahyono.com/blog/${slug}`}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Danny's Blog Detail" />
+        <meta property="og:description" content={firstParagraph} />
+        <meta property="og:image" content={imgLink} />
+      </Head>
+
       <Container
         maxW={{ base: "sm", md: "2xl", xl: "4xl" }}
         px={{ xs: "1", md: "4" }}
