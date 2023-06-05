@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Box,
   ButtonGroup,
@@ -10,6 +11,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+
 import { AiTwotoneMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -22,7 +24,7 @@ const Footer = () => {
     <Box
       as="footer"
       py={{ base: "4", md: "8" }}
-      px={{ base: "4", md: "8", lg: "12", xl: "12", "2xl": "32" }}
+      px={{ base: "0", lg: "12", xl: "12", "2xl": "32" }}
     >
       <Divider mb="6" />
       <Flex
@@ -31,7 +33,9 @@ const Footer = () => {
         alignItems="center"
       >
         <Stack>
-          <Heading size={{ base: "md", md: "lg" }}>Dany Dwi Cahyono</Heading>
+          <Link href="/">
+            <Heading size={{ base: "md", md: "lg" }}>Dany Dwi Cahyono</Heading>
+          </Link>
           <Text
             fontSize="md"
             color="subtle"
@@ -94,14 +98,6 @@ const Footer = () => {
           </Stack>
         </Stack>
       </Flex>
-      <Box mt="4">
-        <Text textAlign="center">
-          Special thanks to @maretacodes for the website design
-        </Text>
-        <Center>
-          <Divider mt="4" width="20%" />
-        </Center>
-      </Box>
     </Box>
   );
 };

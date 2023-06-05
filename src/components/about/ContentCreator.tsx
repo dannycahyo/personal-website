@@ -158,7 +158,7 @@ const ContentTextSection = () => {
   return (
     <Box>
       <Heading size={{ base: "lg", md: "xl", lg: "lg", xl: "xl" }}>
-        Content Creation and Beyond
+        Content Creation & Beyond
       </Heading>
       <Divider
         borderBottomWidth="2px"
@@ -246,7 +246,7 @@ const ContentCreator = () => {
   return (
     <Box
       py={{ base: "2", md: "12", lg: "16" }}
-      px={{ base: "5", md: "12", lg: "8", xl: "12", "2xl": "32" }}
+      px={{ base: "2", md: "12", lg: "8", xl: "12", "2xl": "32" }}
     >
       <SimpleGrid
         columns={{ base: 1, md: 1, lg: 2 }}

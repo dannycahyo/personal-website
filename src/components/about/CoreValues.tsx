@@ -102,7 +102,7 @@ const CoreValues = () => {
   return (
     <Box
       py={{ base: "8", md: "12", lg: "16" }}
-      px={{ base: "5", md: "12", lg: "8", xl: "12", "2xl": "32" }}
+      px={{ base: "2", md: "12", lg: "8", xl: "12", "2xl": "32" }}
     >
       <Grid templateColumns="repeat(2, 1fr)" gap={{ base: 2, md: 12, xl: 20 }}>
         <GridItem colSpan={{ base: 2, md: 2, lg: 1 }}>
