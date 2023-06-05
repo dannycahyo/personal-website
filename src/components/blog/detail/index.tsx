@@ -79,7 +79,7 @@ const BlogDetail = ({
           content={`https://dannydwicahyono.com/blog/${slug}`}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Danny's Blog Detail" />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={firstParagraph} />
         <meta property="og:image" content={imgLink} />
       </Head>
