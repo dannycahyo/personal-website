@@ -12,6 +12,9 @@ export async function getStaticPaths() {
       {
         params: { slug: "why-bother-learning-data-structures-and-algorithms" },
       },
+      {
+        params: { slug: "mpa-vs-spa-web-development-showdown" },
+      },
     ],
     fallback: false,
   };
