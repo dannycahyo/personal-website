@@ -59,8 +59,17 @@ const BlogDetail = ({
     sm: isMobileSize ? "xs" : "sm",
   };
 
-  const matchResult = content.match(/## Background\s*\n(.+)/s);
-  const firstParagraph = matchResult ? matchResult[1] : "";
+  const getFirstParagraphAfterHeading = content.match(
+    /## Background\s*\n(.+)/s
+  );
+  const firstParagraphAfterHeading = getFirstParagraphAfterHeading
+    ? getFirstParagraphAfterHeading[1]
+    : "";
+
+  const getFirstParagraph = content.match(/^[^\r\n]+[\r\n]{2}/m);
+  const firstParagraph = getFirstParagraph ? getFirstParagraph[0].trim() : "";
+
+  const articleDesc = firstParagraphAfterHeading || firstParagraph;
 
   useEffect(() => {
     import("react-syntax-highlighter/dist/esm/styles/prism").then((module) => {
@@ -72,7 +81,7 @@ const BlogDetail = ({
     <Layout>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={firstParagraph} />
+        <meta name="description" content={articleDesc} />
 
         <link
           rel="canonical"
@@ -84,7 +93,7 @@ const BlogDetail = ({
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={firstParagraph} />
+        <meta property="og:description" content={articleDesc} />
         <meta property="og:image" content={imgLink} />
       </Head>
 
