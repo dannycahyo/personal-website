@@ -59,17 +59,37 @@ const BlogDetail = ({
     sm: isMobileSize ? "xs" : "sm",
   };
 
-  const getFirstParagraphAfterHeading = content.match(
-    /## Background\s*\n(.+)/s
-  );
-  const firstParagraphAfterHeading = getFirstParagraphAfterHeading
-    ? getFirstParagraphAfterHeading[1]
-    : "";
+  function getFirstParagraph(markdownText: string) {
+    // Split the markdown text into lines
+    const lines = markdownText.split("\n");
 
-  const getFirstParagraph = content.match(/^[^\r\n]+[\r\n]{2}/m);
-  const firstParagraph = getFirstParagraph ? getFirstParagraph[0].trim() : "";
+    // Initialize an empty string for the first paragraph
+    let firstParagraph = "";
 
-  const articleDesc = firstParagraphAfterHeading || firstParagraph;
+    // Iterate through the lines
+    for (const line of lines) {
+      // Check if the line is a heading or an empty line
+      if (line.startsWith("#") || line.trim() === "") {
+        continue;
+      }
+
+      // If the line is not a heading or an empty line, it's part of the first paragraph
+      firstParagraph += line + "\n";
+
+      // If the next line is an empty line or a heading, break the loop
+      const nextLineIndex = lines.indexOf(line) + 1;
+      if (nextLineIndex < lines.length) {
+        const nextLine = lines[nextLineIndex];
+        if (nextLine.trim() === "" || nextLine.startsWith("#")) {
+          break;
+        }
+      }
+    }
+
+    return firstParagraph.trim();
+  }
+
+  const articleDesc = getFirstParagraph(content);
 
   useEffect(() => {
     import("react-syntax-highlighter/dist/esm/styles/prism").then((module) => {
