@@ -9,6 +9,9 @@ import {
   Text,
   Link,
   useMediaQuery,
+  OrderedList,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -16,6 +19,7 @@ import remarkGfm from "remark-gfm";
 import matter from "gray-matter";
 
 import Layout from "src/containers/layout";
+import React from "react";
 
 type Style = {
   [key: string]: React.CSSProperties;
@@ -47,12 +51,6 @@ const BlogDetail = ({
     year: "numeric",
   });
 
-  useEffect(() => {
-    import("react-syntax-highlighter/dist/esm/styles/prism").then((module) => {
-      setMarkdownTheme(module.darcula);
-    });
-  }, []);
-
   const headingFontSize = {
     "2xl": isMobileSize ? "xl" : "2xl",
     xl: isMobileSize ? "lg" : "xl",
@@ -63,6 +61,12 @@ const BlogDetail = ({
 
   const matchResult = content.match(/## Background\s*\n(.+)/s);
   const firstParagraph = matchResult ? matchResult[1] : "";
+
+  useEffect(() => {
+    import("react-syntax-highlighter/dist/esm/styles/prism").then((module) => {
+      setMarkdownTheme(module.darcula);
+    });
+  }, []);
 
   return (
     <Layout>
@@ -141,9 +145,36 @@ const BlogDetail = ({
               );
             },
             p: ({ node, ...props }) => (
-              <Text py="2" {...props}>
+              <Text py="2" fontSize={{ base: "sm", md: "18px" }} {...props}>
                 {props.children}
               </Text>
+            ),
+            ol: ({ node, ...props }) => (
+              <OrderedList py="2" pl="2" {...props}>
+                {props.children}
+              </OrderedList>
+            ),
+            ul: ({ node, ...props }) => (
+              <UnorderedList py="2" pl="2" {...props}>
+                {props.children}
+              </UnorderedList>
+            ),
+            li: ({ node, ...props }) => (
+              <ListItem py="1" {...props}>
+                <Text fontSize={{ base: "sm", md: "18px" }}>
+                  {props.children}
+                </Text>
+              </ListItem>
+            ),
+            a: ({ node, ...props }) => (
+              <Link color="blue.400" {...props}>
+                {props.children}
+              </Link>
+            ),
+            blockquote: ({ node, ...props }) => (
+              <Box borderLeft="4px solid" borderColor="gray.300" pl="4" py="2">
+                {props.children}
+              </Box>
             ),
           }}
         >
