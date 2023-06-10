@@ -15,13 +15,13 @@ Hi Guys! My name is Danny Dwi Cahyono, and I am a Front-End Engineer who was pre
 
 Growing up, I was a dedicated hockey indoor athlete 💪. I've already felt how the athlete lives, waking up early in the morning, going to the field for practice, isolating myself from exhausting TC (training center) for a couple of weeks and months, participating in competitions in various different areas and levels, and many more.
 
-This passion for sports led me to pursue a Physical Education degree in college. As expected, I've gotten so much exposure to everything related to sports in college. Not only about Hockey but I've also been trying and practicing different kinds of sports, swimming, athletics, football, basketball, gymnastics, tennis, and many more you named it 😏. Of course, at that time, I had no idea what coding looked like or how it could become an essential part of my life.
+This passion for sports led me to pursue a Physical Education degree in college. As expected, I've gotten so much exposure to everything related to sports in college. Not only about Hockey but I've also been trying and practicing different kinds of sports, swimming, athletics, football, basketball, gymnastics, tennis, and many more. You named it 😏. Of course, at that time, I had no idea what coding looked like or how it could become an essential part of my life.
 
 ### Turning Point: Embracing Change
 
 The COVID-19 pandemic changed everything, literally 🙃. When classes shifted to an online format, I found it nearly impossible to engage in sports as I once had. The online learning experience for Physical Education was not as effective as I had hoped, and my interest started to wane. Searching for a new passion and a way to occupy my time during lockdown, I committed to learning about design for the very first time.
 
-It wasn't long before I reconnected with an old friend who had just graduated from computer science college and working as a professional software at a Startup named [M Nindra Zaka](https://www.linkedin.com/in/mnindrazaka/). As we discussed his work, I found myself increasingly intrigued by the world of coding and software development. With his encouragement and guidance, I made the bold decision to learn how to code and explore the possibility of a career in software engineering.
+It wasn't long before I reconnected with an old friend who had just graduated from computer science college and working as a professional software engineer at a Startup named [M Nindra Zaka](https://www.linkedin.com/in/mnindrazaka/). As we discussed his work, I found myself increasingly intrigued by the world of coding and software development. With his encouragement and guidance, I made the bold decision to learn how to code and explore the possibility of a career in software engineering.
 
 In the following months, I poured my energy into learning the basics and fundamentals of programming. I was hooked 😱. I spent hours each day learning and practicing, and almost every single day I went to M Nindra Zaka's house.
 
@@ -41,7 +41,7 @@ This involvement within the community led to an invitation to collaborate on a p
 
 ### Landing an Internship: A New Beginning
 
-With a robust portfolio of personal and community projects under my belt, I felt confident enough to apply for an internship at a software house in Malang called [Hash Rekayasa Teknologi](https://www.hash.id/). To my delight, I was accepted and eagerly began my new role.
+With a robust portfolio of personal and community projects under my belt, I felt confident enough to apply for an internship at a software house in Malang called [Hash Rekayasa Teknologi](https://www.hash.id/). To my delight, I was accepted and eagerly began my new role in June 2021.
 
 The first stage of my internship involved following a structured training program with learning materials and resources provided by the company. Soon after, I was assigned to work on internal applications, further enhancing my skills and knowledge in the field.
 
@@ -69,11 +69,11 @@ In the middle of 2022, the tech industry experienced a downturn known as "tech w
 
 ![Work At Gredu](https://res.cloudinary.com/du5jbmwz5/image/upload/v1686316063/Work_At_Gredu_i8otzz.png)
 
-My perseverance paid off, and after numerous interviews with different companies, I found myself back in the Edutech industry, securing a position at Gredu in December 2022. As of the writing of this article, I continue to work at Gredu, developing and maintaining educational web apps that positively impact the lives of countless individuals.
+My perseverance paid off, and after numerous interviews with different companies, I found myself back in the Edutech industry, securing a position at [Gredu](https://www.gredu.asia/) in December 2022. As of the writing of this article, I continue to work at Gredu, developing and maintaining educational web apps that positively impact the lives of countless individuals.
 
 ### Conclusion: Embracing Change and the Power of Perseverance
 
-My journey from a Physical Education student to a professional Software Engineer has been a roller coaster ride, full of unexpected twists and challenges. Through it all, I have learned valuable lessons that have shaped my personal growth and career development. As I share my story, I hope to inspire others who may be considering a career change or are faced with setbacks in their own lives.
+My journey from a Physical Education student to a professional Software Engineer has been a roller coaster ride, full of unexpected twists and challenges. Through it all, I have learned valuable lessons that have shaped my personal growth and career development. As I share my story, I hope to inspire others who may be considering a career change or are faced with setbacks in their own lives. And if you want to know more about my journey in the video format, you can kindly watch it on my [TikTok Video](https://www.tiktok.com/@dannydwic/video/7232246597969595675).
 
 Here are some key takeaways and lessons learned from my experience:
 
