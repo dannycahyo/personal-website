@@ -15,6 +15,11 @@ export async function getStaticPaths() {
       {
         params: { slug: "mpa-vs-spa-web-development-showdown" },
       },
+      {
+        params: {
+          slug: "how-i-became-a-professional-software-engineer-from-a-physical-education-background",
+        },
+      },
     ],
     fallback: false,
   };
