@@ -3,7 +3,7 @@ title: How I Became a Professional Software Engineer from a Physical Education B
 slug: how-i-became-a-professional-software-engineer-from-a-physical-education-background
 imgLink: https://res.cloudinary.com/du5jbmwz5/image/upload/v1686311572/Professional%20Software%20Engineer.jpg
 category: Non Technical
-date: "2022-06-10"
+date: "2023-06-10"
 readEstimation: 8
 ---
 
