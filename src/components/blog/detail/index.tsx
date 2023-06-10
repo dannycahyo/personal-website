@@ -198,7 +198,7 @@ const BlogDetail = ({
               </ListItem>
             ),
             a: ({ node, ...props }) => (
-              <Link color="blue.400" {...props}>
+              <Link color="blue.400" {...props} target="_blank">
                 {props.children}
               </Link>
             ),
