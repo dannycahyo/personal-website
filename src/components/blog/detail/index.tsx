@@ -133,9 +133,11 @@ const BlogDetail = ({
             height={370}
             style={{ borderRadius: 10 }}
           />
-          <Link href={imgSourceLink} target="_blank" mt="4" color="blue.400">
-            {imgSource}
-          </Link>
+          {imgSource !== undefined ? (
+            <Link href={imgSourceLink} target="_blank" mt="4" color="blue.400">
+              {imgSource}
+            </Link>
+          ) : null}
         </Center>
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
@@ -196,7 +198,7 @@ const BlogDetail = ({
               </ListItem>
             ),
             a: ({ node, ...props }) => (
-              <Link color="blue.400" {...props}>
+              <Link color="blue.400" {...props} target="_blank">
                 {props.children}
               </Link>
             ),

@@ -24,6 +24,15 @@ const blogPost: BlogPost[] = [
     date: "2022-06-07",
     readEstimate: 7,
   },
+  {
+    title:
+      "How I Became a Professional Software Engineer from a Physical Education Background",
+    slug: "how-i-became-a-professional-software-engineer-from-a-physical-education-background",
+    imageURL:
+      "https://res.cloudinary.com/du5jbmwz5/image/upload/v1686311572/Professional%20Software%20Engineer.jpg",
+    date: "2022-06-10",
+    readEstimate: 8,
+  },
 ];
 
 export type { BlogPost };
