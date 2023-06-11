@@ -9,7 +9,7 @@ const contactData: ContactCardProps[] = [
   {
     name: "Instagram",
     label: "My Daily Life",
-    urlLink: "https://www.instagram.com/dannycahyo",
+    urlLink: "https://www.instagram.com/danny_cahyo/",
   },
   {
     name: "Github",
@@ -19,7 +19,7 @@ const contactData: ContactCardProps[] = [
   {
     name: "Tiktok",
     label: "Content Creation",
-    urlLink: "https://www.tiktok.com/@dannycahyo",
+    urlLink: "https://www.tiktok.com/@dannydwic",
   },
   {
     name: "YouTube",
