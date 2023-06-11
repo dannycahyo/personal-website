@@ -28,7 +28,7 @@ const workExperienceData: WorkExperience[] = [
     ],
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer (FE)",
     employmentType: "Full Time",
     description:
       "Joining the largest edutech company in Southeast Asia was a huge milestone in my career. It was exciting to work on a big and supportive team, where I was able to see and coordinate various teams and roles in tech, such as the platform team and the team focused on delivering products. It was a great opportunity to meet so many skillful people in each of these areas, and gain a wealth of knowledge and skill. Throughout the experience, I was able to improve my frontend skills in all aspects, and it gave me the confidence to continue growing in my career.",
@@ -60,7 +60,7 @@ const workExperienceData: WorkExperience[] = [
     ],
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer (FE)",
     employmentType: "Internship",
     description:
       "Starting my tech career with my first internship was a dream come true. I gained real-world project experience for the first time and learned a lot about how the industry works. I was impressed by the internal library developed by the company, and it was amazing to see how my contributions were making an impact. This experience gave me the confidence to pursue a career in tech and I'm grateful for the opportunity to have started my journey with such a great company.",

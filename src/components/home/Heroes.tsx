@@ -39,11 +39,11 @@ const BrandingSection = () => {
         Front-End Engineer
       </Text>
       <Text size="sm" width={{ base: "100%", md: "80%", lg: "80%", xl: "70%" }}>
-        A Front-End Engineer with a high curiosity in mind. His interest makes
-        him connect the dots between mathematics and philosophy in programming.
-        In addition to his day-to-day work, he loves mentoring, spreading
-        knowledge through sharing sessions and content creation to educate
-        others.
+        A dedicated Frontend Engineer with a strong passion for programming and
+        an insatiable curiosity. Excels in connecting the dots between
+        mathematics & philosophy within the coding realm. In addition to his
+        day-to-day work, he loves mentoring, spreading knowledge through sharing
+        sessions and content creation to educate others.
       </Text>
       <Button
         mt="40px"
