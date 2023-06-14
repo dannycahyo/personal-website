@@ -16,7 +16,7 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Center,
+  Link,
 } from "@chakra-ui/react";
 import { workExperienceData } from "src/constant/workExperience";
 import { MdCheckCircle } from "react-icons/md";
@@ -62,13 +62,15 @@ const WorkEperiences = () => {
         >
           <GridItem colSpan={{ base: 5, md: 1 }} rowSpan={{ md: 1 }}>
             <AspectRatio maxW="200px" ratio={4 / 3}>
-              <Image
-                alt={workExperience.company}
-                src={`/assets/image/${workExperience.imageName}`}
-                style={{ objectFit: "cover" }}
-                width={200}
-                height={150}
-              />
+              <Link href={workExperience.companyURL} isExternal>
+                <Image
+                  alt={workExperience.company}
+                  src={`/assets/image/${workExperience.imageName}`}
+                  style={{ objectFit: "cover" }}
+                  width={200}
+                  height={150}
+                />
+              </Link>
             </AspectRatio>
           </GridItem>
           <GridItem colSpan={{ base: 5, md: 4 }} rowSpan={{ md: 3 }}>
@@ -82,6 +84,17 @@ const WorkEperiences = () => {
             <Heading size="md" mb="2">
               {`${workExperience.company} - ${workExperience.employmentType}`}
             </Heading>
+            {workExperience.companyDescription !== undefined ? (
+              <Text
+                fontSize="sm"
+                color="gray.500"
+                width={{ base: "100%", md: "80%" }}
+                mb="2"
+              >
+                {workExperience.companyDescription}
+              </Text>
+            ) : null}
+
             <Heading
               size="sm"
               textAlign="left"
