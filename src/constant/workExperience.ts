@@ -20,7 +20,7 @@ const workExperienceData: WorkExperience[] = [
     companyURL: "https://www.linkedin.com/company/gredu",
     companyDescription:
       "GREDU is a social ed-tech platform dedicated to enhancing the school experience for teachers, parents, and students. The company has secured $4 million in Series A, as reported by Crunchbase.",
-    period: "Dec 2022 - Present",
+    period: "Dec 2022 - Jun 2023",
     imageName: "GreduLogo.jpeg",
     contributions: [
       "Spearheaded a key role in the Frontend Team, including brainstorming, design screening, ideation, coordinating, and code review until the successful delivery of the product.",
