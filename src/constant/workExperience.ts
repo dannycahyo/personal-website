@@ -14,8 +14,24 @@ const workExperienceData: WorkExperience[] = [
   {
     title: "Frontend Engineer",
     employmentType: "Full Time",
+    company: "Hijra",
+    companyURL: "https://www.linkedin.com/company/hijrabyalamigroup",
+    period: "Aug 2023 - Present",
+    imageName: "HijraLogo.png",
     description:
-      "Committing to an edutech company was an exciting opportunity to continue my passion for creating technology solutions for education. I was tasked with working on the Learning Management System, which involved providing applications for students, teachers, and parents to create a seamless online learning environment. Working closely with the CTO allowed me to gain a deeper understanding of the product's end-to-end process and the overall business model. ",
+      "My role as a Frontend Engineer at Hijra (formerly the ALAMI Group) has been pivotal in our journey within the world of ethical finance and Sharia-compliant financial technology. I've been instrumental in developing and advancing various innovative services, including a peer-to-peer lending platform, CMS dashboard for disbursement, and a mobile banking app—each thoughtfully grounded in Sharia principles.",
+    companyDescription:
+      "Hijra (previously known as the ALAMI Group) is a financial technology company that follows sharia principles. The company offers a range of services, including a peer-to-peer lending platform, mobile banking app, business accelerator, and research institute, all of which are based on sharia principles. Hijra has a presence in 482 cities across 32 Indonesian provinces through both commercial and social initiatives.",
+    contributions: [
+      "Collaborated with Principal Engineer teams to separate the Frontend (FE) and Backend (BE) within a Java Spring and JSP MVC project. This allowed for faster development, modular code, and integration of React for the FE while fitting into the existing codebase. The result: increased adaptability to changing requirements and technologies.",
+      "Played a pivotal role in developing a peer-to-peer product aimed at streamlining and rectifying data inconsistencies within a payor company. By designing and implementing robust data synchronization mechanisms, this solution significantly improved data integrity and consistency, reducing operational errors and enhancing overall efficiency. This initiative resulted in a smoother workflow, boosting productivity and minimizing the need for manual data corrections, ultimately benefiting both the company and its clients.",
+    ],
+  },
+  {
+    title: "Frontend Engineer",
+    employmentType: "Full Time",
+    description:
+      "Committing to an edutech company was an exciting opportunity to continue my passion for creating technology solutions for education. I was tasked with working on the Learning Management System, which involved providing applications for students, teachers, and parents to create a seamless online learning environment. Working closely with the CTO allowed me to gain a deeper understanding of the product's end-to-end process and the overall business model.",
     company: "Gredu Asia",
     companyURL: "https://www.linkedin.com/company/gredu",
     companyDescription:

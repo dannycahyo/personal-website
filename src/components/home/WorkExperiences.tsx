@@ -20,17 +20,16 @@ import {
 } from "@chakra-ui/react";
 import { workExperienceData } from "src/constant/workExperience";
 import { MdCheckCircle } from "react-icons/md";
-import React from "react";
 
 const WorkEperiences = () => {
   const borderColorBasedOnColorMode = useColorModeValue(
     "personalLight.300",
-    "personalDark.100"
+    "personalDark.100",
   );
 
   const accordionBgBasedOnColorMode = useColorModeValue(
     "blackAlpha.50",
-    "gray.600"
+    "gray.600",
   );
 
   return (
