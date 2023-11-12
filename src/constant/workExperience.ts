@@ -23,8 +23,9 @@ const workExperienceData: WorkExperience[] = [
     companyDescription:
       "Hijra (previously known as the ALAMI Group) is a financial technology company that follows sharia principles. The company offers a range of services, including a peer-to-peer lending platform, mobile banking app, business accelerator, and research institute, all of which are based on sharia principles. Hijra has a presence in 482 cities across 32 Indonesian provinces through both commercial and social initiatives.",
     contributions: [
-      "Collaborated with Principal Engineer teams to separate the Frontend (FE) and Backend (BE) within a Java Spring and JSP MVC project. This allowed for faster development, modular code, and integration of React for the FE while fitting into the existing codebase. The result: increased adaptability to changing requirements and technologies.",
-      "Played a pivotal role in developing a peer-to-peer product aimed at streamlining and rectifying data inconsistencies within a payor company. By designing and implementing robust data synchronization mechanisms, this solution significantly improved data integrity and consistency, reducing operational errors and enhancing overall efficiency. This initiative resulted in a smoother workflow, boosting productivity and minimizing the need for manual data corrections, ultimately benefiting both the company and its clients.",
+      "Played a pivotal role in the Mina frontend-backend separation project, actively assisting the platform and principal engineer teams in successfully segregating Mina's backend and frontend. Additionally, spearheaded testing of the separation in the payor's project, which led to streamlined development processes, increased productivity, and an enhanced developer experience.",
+      "Led the initiation of technical documentation and system design for the frontend in the FOS disbursement project, establishing a strong foundation for smooth frontend implementation.",
+      "Made significant contributions to code reviews in both frontend, mobile, and QA domains. Elevated the standards and attention to detail within the engineering frontend team, impacting several of Hijra's and Alami's project. Prompt responses in code reviews improved overall team efficiency and work quality.",
     ],
   },
   {
