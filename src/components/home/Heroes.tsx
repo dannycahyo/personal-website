@@ -14,7 +14,7 @@ import {
 const BrandingSection = () => {
   const borderColorBasedOnColorMode = useColorModeValue(
     "personalLight.300",
-    "personalDark.100"
+    "personalDark.100",
   );
 
   return (
@@ -38,12 +38,20 @@ const BrandingSection = () => {
       >
         Front-End Engineer
       </Text>
-      <Text size="sm" width={{ base: "100%", md: "80%", lg: "80%", xl: "70%" }}>
-        A dedicated Frontend Engineer with a strong passion for programming and
-        an insatiable curiosity. Excels in connecting the dots between
-        mathematics & philosophy within the coding realm. In addition to his
-        day-to-day work, he loves mentoring, spreading knowledge through sharing
-        sessions and content creation to educate others.
+      <Text
+        size="sm"
+        width={{ base: "100%", md: "80%", lg: "80%", xl: "70%" }}
+      >
+        Danny is a passionate Software Engineer who bridges the gap
+        between mathematics and philosophy in programming, with a keen
+        interest in functional programming paradigms while exploring
+        others to broaden his problem-solving approaches. He is
+        currently committed to enhancing his skills in data structures
+        and algorithms for optimized coding solutions. Beyond his
+        professional endeavors, Danny mentors emerging engineers in
+        the Probolinggo tech community, shares his knowledge through
+        social media, and continuously expands his expertise through
+        reading.
       </Text>
       <Button
         mt="40px"
