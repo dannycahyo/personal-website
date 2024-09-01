@@ -36,7 +36,7 @@ const BrandingSection = () => {
         size={{ base: "md", md: "lg", lg: "xl", xl: "2xl" }}
         fontWeight="extrabold"
       >
-        Front-End Engineer
+        Software Engineer
       </Text>
       <Text
         size="sm"

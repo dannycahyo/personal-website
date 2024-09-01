@@ -58,10 +58,11 @@ const Heroes = () => {
         fontWeight="500"
         textAlign="center"
       >
-        I strive to create valuable content that cuts through the noise and
-        provides real value to those who engage with it. Through speaking and
-        teaching, I aim to help other engineers grow their skills and reach
-        their full potential in the tech industry.
+        I strive to create valuable content that cuts through the
+        noise and provides real value to those who engage with it.
+        Through speaking and teaching, I aim to help other engineers
+        grow their skills and reach their full potential in the tech
+        industry.
       </Text>
       <Box>
         <Image
@@ -95,7 +96,7 @@ const Heroes = () => {
         bottom={8}
       >
         <Text size={{ base: "xs", md: "sm" }} fontWeight="600">
-          Front-End Engineer
+          Software Engineer
         </Text>
       </Box>
       <Box
