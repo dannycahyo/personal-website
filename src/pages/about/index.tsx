@@ -9,7 +9,7 @@ export async function getServerSideProps({
   res,
 }: GetServerSidePropsContext) {
   res.setHeader(
-    "Vercel-CDN-Cache-Control",
+    "Cache-Control",
     "public, s-maxage=10, stale-while-revalidate=59",
   );
   return { props: {} };
