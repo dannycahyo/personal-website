@@ -23,9 +23,13 @@ const workExperienceData: WorkExperience[] = [
     companyDescription:
       "Hijra (previously known as the ALAMI Group) is a financial technology company that follows sharia principles. The company offers a range of services, including a peer-to-peer lending platform, mobile banking app, business accelerator, and research institute, all of which are based on sharia principles. Hijra has a presence in 482 cities across 32 Indonesian provinces through both commercial and social initiatives.",
     contributions: [
-      "Played a pivotal role in the Mina frontend-backend separation project, actively assisting the platform and principal engineer teams in successfully segregating Mina's backend and frontend. Additionally, spearheaded testing of the separation in the payor's project, which led to streamlined development processes, increased productivity, and an enhanced developer experience.",
-      "Led the initiation of technical documentation and system design for the frontend in the FOS disbursement project, establishing a strong foundation for smooth frontend implementation.",
-      "Made significant contributions to code reviews in both frontend, mobile, and QA domains. Elevated the standards and attention to detail within the engineering frontend team, impacting several of Hijra's and Alami's project. Prompt responses in code reviews improved overall team efficiency and work quality.",
+      "Initiated and built the technical stack for a Collection Management System that minimizes late payment delays, maintains a 4% NPF ratio for our P2P Lending system, and resolves problematic loan applications to drive revenue growth.",
+      "Played a pivotal role in segregating the legacy P2P Lending admin system into independent frontend and backend layers, resolving coupling and inline scripting challenges in our Java Spring/JSP environment and boosting developer productivity by 40%.",
+      "Led design and development of a compliance system with integrated tracking and flagging, achieving a 50% customer data update rate – crucial for external reporting and POJK APU-PPT (Anti-Money Laundering and Combating the Financing of Terrorism).",
+      "Led the design and implementation of a Form Generator that reduced development time by 50%, markedly streamlining the creation and management of forms across multiple projects, and boosting operational efficiency and scalability.",
+      "Pushed the Financing Frontend Refactoring project which resulted in a 25% reduction in post-deployment bugs and a 30% enhancement in workflow efficiency through the adoption of industry best practices.",
+      "Conducted over 20 live coding interviews focused on data structures and algorithms, ensuring high technical standards and a 15% improvement in candidate quality through rigorous assessment of fundamental coding skills.",
+      "Consistently delivered thorough code reviews across frontend, mobile, and QA domains, elevating overall code quality standards and contributing to a 15% increase in codebase stability and team productivity.",
     ],
   },
   {
@@ -40,12 +44,11 @@ const workExperienceData: WorkExperience[] = [
     period: "Dec 2022 - Jun 2023",
     imageName: "GreduLogo.jpeg",
     contributions: [
-      "Spearheaded a key role in the Frontend Team, including brainstorming, design screening, ideation, coordinating, and code review until the successful delivery of the product.",
-      "Championed responsibility for tackling all of the bug fixes on the production environment, ensuring a seamless user experience for customers.",
-      "Pioneered the development of an internal tool using Chat GPT API, which significantly expedited the Frontend development process, making it 2x faster.",
-      "Innovated by contributing to the development of a report feature that empowered teachers to create digital learning reports for students, revolutionizing the traditional manual process and providing a more efficient and digital solution. This feature greatly benefited all stakeholders, including parents, students, and teachers, streamlining the reporting process and enhancing the overall user experience.",
+      "Directed a cross-functional Frontend Team through brainstorming, design screening, ideation, coordination, and solid code review—accelerating product delivery by 20% and ensuring a high-quality launch.",
       "Led the implementation of attendance features for students and teachers, resulting in heightened engagement and loyalty from users, leading to sustained subscriptions.",
-      "Crafted a new CMS from scratch for optimized content distribution among teachers in schools, facilitating effortless sharing of tasks, exercises, exams, and assignments, resulting in a remarkable improvement in the learning experience for students.",
+      "Managed a digital student report feature that cut report generation time by 40%. This solution not only streamlined operations for teachers, parents, and students but also contributed to securing subscriptions from more than 50 schools across Indonesia.",
+      "Pioneered the development of an internal tool using Open AI API, which significantly speed up the Frontend development process, making it 2x faster.",
+      "Crafted a new CMS from scratch to optimize content distribution among teachers—improving task sharing efficiency by 30% and markedly enriching the learning experience for students.",
     ],
   },
   {
@@ -60,10 +63,9 @@ const workExperienceData: WorkExperience[] = [
     period: "Jan 2022 - Nov 2022",
     imageName: "RuangguruLogo.png",
     contributions: [
-      "Spearheaded the technical planning and delivery of the Prakerja Project, a pivotal initiative that revolutionized the company's website and mobile apps to comply with the latest government regulations. This resulted in a resounding victory in the Prakerja Market, generating billions of Rupiah in revenue.",
+      "Pushed the technical planning and delivery of the Prakerja Project, a pivotal initiative that revolutionized the company's website and mobile apps to comply with the latest government regulations. This resulted in a resounding victory in the Prakerja Market, generating billions of Rupiah in revenue.",
       "Orchestrated technical planning and delivery of the Skill Academy (SA) PPD's SEO project. Increased organic traffic by 6+ times (Jan-Jun 2022) and saved ad spending by hundreds of millions of Rupiah/month (e.g., 500+ Million in June 2022). As further notes, organic traffic users in SA are six times more engaged than paid traffic users.",
-      "Optimized the Skill Academy main pages by meticulously refactoring them into small, reusable components, eliminating code duplication and significantly enhancing the code base's maintainability for developers.",
-      "Revamped the tracker implementation of Skill Academy websites, streamlining the data team's ability to categorize user interactions and obtain precise data for informed decision-making in business and marketing.",
+      "Revamped the tracker for Skill Academy website and mobile apps, improving user categorization accuracy by 35% and reducing data processing time by 40% to enable smarter business decisions.",
       "Led the technical planning and delivery of the Skill Academy Boot Camp project, resulting in a remarkable 3.3x increase in transactions since its initial launch in August 2022.",
       "Contributed significantly to the delivery of the Skill Academy Dynamic Home Page project, revolutionizing the asset adjustment process for the operation team and reducing asset adjustment speed to less than 0.5 days. Additionally, it streamlined FE team productivity for minor interface changes from 1 man week to 0.2 man week.",
       "Drove the technical planning and delivery of the Gamification project, introducing a captivating reward mechanism using coins as tokens for prizes, including the development of the reward disbursement process and reward disbursement history. This project substantially increased the course purchase rate and saved the operation team approximately 4 hours.",
