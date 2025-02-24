@@ -19,11 +19,11 @@ const workExperienceData: WorkExperience[] = [
     period: "Aug 2023 - Present",
     imageName: "HijraLogo.png",
     description:
-      "My role as a Frontend Engineer at Hijra (formerly the ALAMI Group) has been pivotal in our journey within the world of ethical finance and Sharia-compliant financial technology. I've been instrumental in developing and advancing various innovative services, including a peer-to-peer lending platform, CMS dashboard for disbursement, and a mobile banking app—each thoughtfully grounded in Sharia principles.",
+      "My role as a Software Engineer at Hijra (formerly the ALAMI Group) has been pivotal in our journey within the world of ethical finance and Sharia-compliant financial technology. I've been instrumental in developing and advancing various innovative services, including a peer-to-peer lending platform, CMS dashboard for disbursement, and a mobile banking app—each thoughtfully grounded in Sharia principles.",
     companyDescription:
       "Hijra (previously known as the ALAMI Group) is a financial technology company that follows sharia principles. The company offers a range of services, including a peer-to-peer lending platform, mobile banking app, business accelerator, and research institute, all of which are based on sharia principles. Hijra has a presence in 482 cities across 32 Indonesian provinces through both commercial and social initiatives.",
     contributions: [
-      "Initiated and built the technical stack for a Collection Management System that minimizes late payment delays, maintains a 4% NPF ratio for our P2P Lending system, and resolves problematic loan applications to drive revenue growth.",
+      "Initiated and built a Collection Management System that streamlined 567 collection records across 210 financing applications and achieved an 84.97% on-due-date repayment rate (147/173 loans), driving revenue growth and enhancing risk management.",
       "Played a pivotal role in segregating the legacy P2P Lending admin system into independent frontend and backend layers, resolving coupling and inline scripting challenges in our Java Spring/JSP environment and boosting developer productivity by 40%.",
       "Led design and development of a compliance system with integrated tracking and flagging, achieving a 50% customer data update rate – crucial for external reporting and POJK APU-PPT (Anti-Money Laundering and Combating the Financing of Terrorism).",
       "Led the design and implementation of a Form Generator that reduced development time by 50%, markedly streamlining the creation and management of forms across multiple projects, and boosting operational efficiency and scalability.",
