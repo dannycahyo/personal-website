@@ -49,7 +49,7 @@ const BrandingSection = () => {
         currently committed to enhancing his skills in data structures
         and algorithms for optimized coding solutions. Beyond his
         professional endeavors, Danny mentors emerging engineers in
-        the Probolinggo tech community, shares his knowledge through
+        tech community, shares his knowledge through
         social media, and continuously expands his expertise through
         reading.
       </Text>
