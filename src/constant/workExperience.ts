@@ -16,7 +16,7 @@ const workExperienceData: WorkExperience[] = [
     employmentType: "Full Time",
     company: "Hijra",
     companyURL: "https://www.linkedin.com/company/hijrabyalamigroup",
-    period: "Aug 2023 - Present",
+    period: "Aug 2023 - Feb 2025",
     imageName: "HijraLogo.png",
     description:
       "My role as a Software Engineer at Hijra (formerly the ALAMI Group) has been pivotal in our journey within the world of ethical finance and Sharia-compliant financial technology. I've been instrumental in developing and advancing various innovative services, including a peer-to-peer lending platform, CMS dashboard for disbursement, and a mobile banking app—each thoughtfully grounded in Sharia principles.",
